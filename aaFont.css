@@ -1,0 +1,46 @@
+@@ -0,0 +1,44 @@
+@font-face{
+    font-family:'Stmr';
+    src:url('http://keage.sakura.ne.jp/fonts/Saitamaar.eot');
+    src:local('Saitamaar'),
+        url('http://keage.sakura.ne.jp/fonts/Saitamaar.eot?#iefix') format('embedded-opentype'),
+        url('http://keage.sakura.ne.jp/fonts/Saitamaar.woff2') format('woff2'),
+        url('http://keage.sakura.ne.jp/fonts/Saitamaar.woff') format('woff'),
+        url('http://keage.sakura.ne.jp/fonts/Saitamaar.ttf') format('truetype');
+    font-weight:normal;
+    }
+.AA_Font {
+    font-family: Stmr, sans-serif;
+    font-size: 16px;
+    line-height: 1.125;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    word-break: break-all;
+    white-space: nowrap;
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+@media all and (max-width: 800px) {
+.AA_Mini {
+    font-size: 11px;
+    width: 800px;
+    background-color: #f8f8f9;
+}
+}
+@media all and (max-width: 540px) {
+.AA_Mini {
+    font-size: 9px;
+    width: 680px;
+    background-color: #f8f8f9;
+}
+}
+\ No newline at end of file
