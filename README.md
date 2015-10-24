@@ -1,9 +1,7 @@
 #aaFont
-=======
 css use Saitamaar fonts
 
 #usage
-=====
 
 use AA_Font, AA_size class
 ```html
@@ -12,7 +10,6 @@ use AA_Font, AA_size class
 ```
 
 #Licence
-=======
 
 
 ### Saitamaar Font
