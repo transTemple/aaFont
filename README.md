@@ -3,7 +3,7 @@ css use Saitamaar fonts
 
 #usage
 
-use AA_Font, AA_size class
+use AA_Font, AA_Mini class
 ```html
 <link rel="stylesheet" href="aaFont.css" type="text/css" charset="utf-8" />
 <div class="AA_Font AA_Mini"></div>
