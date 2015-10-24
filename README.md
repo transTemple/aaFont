@@ -6,7 +6,7 @@ css use Saitamaar fonts
 use AA_Font, AA_Mini class
 ```html
 <link rel="stylesheet" href="aaFont.css" type="text/css" charset="utf-8" />
-<div class="AA_Font AA_Mini"></div>
+<div class="AA_Font AA_Mini"> AA Text in here </div>
 ```
 
 #Licence
