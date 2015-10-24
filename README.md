@@ -1,11 +1,18 @@
-aaFont
-=============
+#aaFont
+=======
 css use Saitamaar fonts
 
+#usage
+=====
 
+use AA_Font, AA_size class
+```html
+<link rel="stylesheet" href="aaFont.css" type="text/css" charset="utf-8" />
+<div class="AA_Font AA_Mini"></div>
+```
 
-Licence
---------------------------------------------------------------------------------------------------------------------------------
+#Licence
+=======
 
 
 ### Saitamaar Font
