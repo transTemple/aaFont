@@ -39,18 +39,18 @@
     -webkit-font-smoothing: antialiased;
     
     /*
-     * Firefox, IE에서 Cleartype 폰트 다듬기로 인하여 글자가 녹색계열로 보이는 문제 개선을 위해
-     * 텍스트 박스를 작게 기울여서 안티에일리어싱 폰트 주변 도트 색상을 변경함.
+     * Firefox, IE에서 Cleartype 폰트 다듬기로 인하여 글자가 녹색계열로 보이는 문제 개선
      * 성능 저하의 원인이 될수 있으니 사용하지 않을경우 주석처리 하거나 삭제할것.
+     * IE는 호환성 모드 사용을 전제로 IE7용만 추가.
      */
-    -ms-transform: matrix(1, 0, 0.000008, 1, 0, 0);
-    -webkit-transform: matrix(1, 0, 0.000008, 1, 0, 0);
-    -moz-transform: matrix(1, 0, 0.000008, 1, 0, 0);
-    transform: matrix(1, 0, 0.000008, 1, 0, 0);
+    /* Firefox용 svg blur 필터 */
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter id="gaussian_blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0" /></filter></defs></svg>#gaussian_blur');
+    /* Chrome 용 webkit blur */
+    -webkit-blur(0px);
     /* IE6 and IE7 용 */
     filter: progid:DXImageTransform.Microsoft.Matrix(
             M11=1,
-            M12=0.000008,
+            M12=0,
             M21=0,
             M22=1,
             SizingMethod='auto expand');
