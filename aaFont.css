@@ -47,6 +47,13 @@
     -webkit-transform: matrix(1, 0, 0.000008, 1, 0, 0);
     -moz-transform: matrix(1, 0, 0.000008, 1, 0, 0);
     transform: matrix(1, 0, 0.000008, 1, 0, 0);
+    /* IE6 and IE7 용 */
+    filter: progid:DXImageTransform.Microsoft.Matrix(
+            M11=1,
+            M12=0.000008,
+            M21=0,
+            M22=1,
+            SizingMethod='auto expand');
     
     /* 폰트 비율 고정 */
     -moz-text-size-adjust: none;
