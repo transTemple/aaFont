@@ -6,7 +6,7 @@
 
 ### usage
 
- * use AA_Text class
+ * use AA_Text class like this
  
 ```html
 <link rel="stylesheet" href="http://transtemple.github.io/aaFont/aaFont.css" type="text/css" charset="utf-8" />
