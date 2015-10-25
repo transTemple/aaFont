@@ -2,7 +2,7 @@
 -------------------
 ### what is this?
 
- * css file that use Saitamaar fonts without javascript
+ * css file that use Saitamaar fonts **without** javascript
 
 ### usage
 
