@@ -1,16 +1,20 @@
-#aaFont
-css use Saitamaar fonts
+# aaFont
+-------------------
+## what is this?
 
-#usage
+ * css file that use Saitamaar fonts without javascript
 
-use AA_Font, AA_Mini class
+## usage
+
+ * use AA_Text class
+ 
 ```html
-<link rel="stylesheet" href="aaFont.css" type="text/css" charset="utf-8" />
-<div class="AA_Font AA_Mini"> AA Text in here </div>
+<link rel="stylesheet" href="http://transtemple.github.io/aaFont/aaFont.css" type="text/css" charset="utf-8" />
+<div class="AA_Text"> AA Text in here </div>
 ```
 
-#Licence
-
+# Licence
+---------------------
 
 ### Saitamaar Font
 

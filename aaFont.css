@@ -1,3 +1,18 @@
+/*
+ *  # aaFont.css
+ *
+ *  - v1.2.1
+ *  - AA 표시용 폰트 Saitamaar 를 자바스크립트 없이 적용하는 css
+ *
+ *
+ *  # Saitamaar Font License
+ *
+ *  - (c) YAMASINA Keage - http://keage.sakura.ne.jp
+ *  - Licensed under the MIT license. - http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+
+/* 웹폰트 불러오기 */
 @font-face{
     font-family:'Stmr';
     src:url('http://keage.sakura.ne.jp/fonts/Saitamaar.eot');
@@ -8,37 +23,64 @@
         url('http://keage.sakura.ne.jp/fonts/Saitamaar.ttf') format('truetype');
     font-weight:normal;
     }
-.AA_Font {
-    font-family: Stmr, sans-serif;
+
+/* 웹폰트 스타일 설정 */
+.AA_Text {
+    /* 폰트 설정 (글꼴, 크기, 줄간격순) */
+    font-family: Stmr;
     font-size: 16px;
-    line-height: 1.125;
+    line-height: 1.125; /* 1.125 == 18px */
+    
+    /* 배경색 */
+    background-color: #f8f8f9;
+    
+    /* 안티엔틸리어싱 설정 */
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    
+    /*
+     * Firefox, IE에서 Cleartype 폰트 다듬기로 인하여 글자가 녹색계열로 보이는 문제 개선을 위해
+     * 텍스트 박스를 작게 기울여서 안티에일리어싱 폰트 주변 도트 색상을 변경함.
+     * 성능 저하의 원인이 될수 있으니 사용하지 않을경우 주석처리 하거나 삭제할것.
+     */
+    -ms-transform: matrix(1, 0, 0.000008, 1, 0, 0);
+    -webkit-transform: matrix(1, 0, 0.000008, 1, 0, 0);
+    -moz-transform: matrix(1, 0, 0.000008, 1, 0, 0);
+    transform: matrix(1, 0, 0.000008, 1, 0, 0);
+    
+    /* 폰트 비율 고정 */
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    
+    /* 자동 개행 금지 */
+    word-break: break-all;
+    white-space: nowrap;
+    
+    /* 기타 설정 */
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
     font-stretch: normal;
-    word-break: break-all;
-    white-space: nowrap;
     display: block;
     overflow-x: auto;
     overflow-y: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    -moz-text-size-adjust: none;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
 }
-@media all and (max-width: 800px) {
-.AA_Mini {
-    font-size: 11px;
-    width: 800px;
-    background-color: #f8f8f9;
+
+/* 화면 크기에 따라서 텍스트 박스 크기와 폰트 크기 변경 */
+
+/* 540-800px */
+@media screen and (max-width: 800px) {
+    .AA_Text {
+        font-size: 11px;
+        width: 800px;
+    }
 }
-}
-@media all and (max-width: 540px) {
-.AA_Mini {
-    font-size: 9px;
-    width: 680px;
-    background-color: #f8f8f9;
-}
+
+/* 540px이하 */
+@media screen and (max-width: 540px) {
+    .AA_Text {
+        font-size: 9px;
+        width: 680px;
+    }
 }
