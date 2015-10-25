@@ -1,10 +1,10 @@
-# aaFont
+ aaFont
 -------------------
-## what is this?
+### what is this?
 
  * css file that use Saitamaar fonts without javascript
 
-## usage
+### usage
 
  * use AA_Text class
  
@@ -13,7 +13,7 @@
 <div class="AA_Text"> AA Text in here </div>
 ```
 
-# Licence
+ Licence
 ---------------------
 
 ### Saitamaar Font
