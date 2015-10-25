@@ -1,10 +1,10 @@
  aaFont
 -------------------
-### what is this?
+### Overview
 
  * css file that use Saitamaar fonts **without** javascript
 
-### usage
+### Usage
 
  * use AA_Text class like this
  
