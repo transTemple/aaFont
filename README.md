@@ -9,7 +9,10 @@
  * use AA_Text class like this
  
 ```html
+<div style="display: none;">
 <link rel="stylesheet" href="http://transtemple.github.io/aaFont/aaFont.css" type="text/css" charset="utf-8" />
+</div>
+
 <div class="AA_Text"> AA Text in here </div>
 ```
 
