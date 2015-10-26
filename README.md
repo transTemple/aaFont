@@ -1,4 +1,4 @@
-[![GitHub version](https://badge.fury.io/gh/transtemple%2Faafont.svg)](https://badge.fury.io/gh/transtemple%2Faafont)
+[![GitHub version](https://badge.fury.io/gh/transtemple%2Faafont.png)](https://badge.fury.io/gh/transtemple%2Faafont)
  aaFont
 -------------------
 ### Overview
