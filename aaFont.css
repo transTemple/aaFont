@@ -1,7 +1,7 @@
 /*
  *  # aaFont.css
  *
- *  - v1.2.2
+ *  - v1.2.3
  *  - AA 표시용 폰트 Saitamaar 를 자바스크립트 없이 적용하는 css
  *
  *
@@ -43,10 +43,9 @@
      * 성능 저하의 원인이 될수 있으니 사용하지 않을경우 주석처리 하거나 삭제할것.
      * IE는 호환성 모드 사용을 전제로 IE7용만 추가.
      */
-    /* Firefox용 svg blur 필터 */
-    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter id="gaussian_blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0" /></filter></defs></svg>#gaussian_blur');
-    /* Chrome 용 webkit blur */
-    -webkit-filter: blur(0px);
+    /* Firefox, Chrome 용 */
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
     /* IE6 and IE7 용 */
     filter: progid:DXImageTransform.Microsoft.Matrix(
             M11=1,
@@ -79,6 +78,8 @@
 /* 540-800px */
 @media screen and (max-width: 800px) {
     .AA_Text {
+        -webkit-filter: none;
+        filter: none;
         font-size: 11px;
         width: 800px;
     }
@@ -87,6 +88,8 @@
 /* 540px이하 */
 @media screen and (max-width: 540px) {
     .AA_Text {
+        -webkit-filter: none;
+        filter: none;
         font-size: 9px;
         width: 680px;
     }
