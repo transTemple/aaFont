@@ -1,7 +1,7 @@
 /*
  *  # aaFont.css
  *
- *  - v1.2.2
+ *  - v1.2.3
  *  - AA 표시용 폰트 Saitamaar 를 자바스크립트 없이 적용하는 css
  *
  *
@@ -43,6 +43,7 @@
      * 성능 저하의 원인이 될수 있으니 사용하지 않을경우 주석처리 하거나 삭제할것.
      * IE는 호환성 모드 사용을 전제로 IE7용만 추가.
      */
+    /* Firefox, Chrome 용 */
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     /* IE6 and IE7 용 */
