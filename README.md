@@ -1,10 +1,11 @@
+[![GitHub version](https://badge.fury.io/gh/transtemple%2Faafont.png)](https://badge.fury.io/gh/transtemple%2Faafont)
  aaFont
 -------------------
-### what is this?
+### Overview
 
  * css file that use Saitamaar fonts **without** javascript
 
-### usage
+### Usage
 
  * use AA_Text class like this
  
