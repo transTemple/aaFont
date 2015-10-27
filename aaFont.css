@@ -77,6 +77,8 @@
 /* 540-800px */
 @media screen and (max-width: 800px) {
     .AA_Text {
+        -webkit-filter: none;
+        filter: none;
         font-size: 11px;
         width: 800px;
     }
@@ -85,6 +87,8 @@
 /* 540px이하 */
 @media screen and (max-width: 540px) {
     .AA_Text {
+        -webkit-filter: none;
+        filter: none;
         font-size: 9px;
         width: 680px;
     }
