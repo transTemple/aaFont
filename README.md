@@ -3,7 +3,7 @@
 -------------------
 ### Overview
 
- * css file that use Saitamaar fonts **without** javascript
+ * css file to apply a Saitamaar webfont **without** using the javascript
 
 ### Usage
 
