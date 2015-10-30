@@ -38,15 +38,7 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     
-    /*
-     * Firefox, IE에서 Cleartype 폰트 다듬기로 인하여 글자가 녹색계열로 보이는 문제 개선
-     * 성능 저하의 원인이 될수 있으니 사용하지 않을경우 주석처리 하거나 삭제할것.
-     * IE는 호환성 모드 사용을 전제로 IE7용만 추가.
-     */
-    /* Firefox, Chrome 용 */
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    /* IE6 and IE7 용 */
+    /* IE6 and IE7 용 필터 */
     filter: progid:DXImageTransform.Microsoft.Matrix(
             M11=1,
             M12=0,
@@ -74,7 +66,19 @@
 }
 
 /* 화면 크기에 따라서 텍스트 박스 크기와 폰트 크기 변경 */
-
+/* 801px 이상 = PC 환경 */
+@media screen and (min-width: 801px){
+    .AA_Text {
+        /*
+        * Firefox, IE에서 Cleartype 폰트 다듬기로 인하여 글자가 녹색계열로 보이는 문제 개선
+        * 성능 저하의 원인이 될수 있으니 사용하지 않을경우 주석처리 하거나 삭제할것.
+        * IE는 호환성 모드 사용을 전제로 기본 스타일 설정에 IE7용만 추가.
+        */
+        /* Firefox, Chrome 용 */
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }   
+}
 /* 540-800px */
 @media screen and (max-width: 800px) {
     .AA_Text {
