@@ -27,7 +27,8 @@
 /* 웹폰트 스타일 설정 */
 .AA_Text {
     /* 폰트 설정 (글꼴, 크기, 줄간격순) */
-    font-family: Stmr;
+    /* 'MS PGothic'은 사이타마 미지원 문자 및 한글표시 대책 */
+    font-family: Stmr, 'MS PGothic'; 
     font-size: 16px;
     line-height: 1.125; /* 1.125 == 18px */
     
