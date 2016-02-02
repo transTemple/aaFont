@@ -55,7 +55,7 @@
 }
 
 /* 540-800px */
-@media screen and (max-width: 800px) {
+@media screen and (min-width:541px) and (max-width: 800px) {
     .AA_Text {
         font-size: 11px;
         width: 800px;
