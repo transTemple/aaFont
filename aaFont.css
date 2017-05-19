@@ -25,7 +25,7 @@
     }
 
 /* 웹폰트 스타일 설정 */
-.AA_Text * {
+.AA_Text, .AA_Text * {
     /* 폰트 설정 (글꼴, 크기, 줄간격순) */
     /* 'MS PGothic'은 사이타마 미지원 문자 및 한글표시 대책 */
     font-family: Stmr, 'MS PGothic'; 
@@ -56,7 +56,7 @@
 
 /* 540-800px */
 @media screen and (min-width:541px) and (max-width: 800px) {
-    .AA_Text * {
+    .AA_Text, .AA_Text * {
         font-size: 11px;
         width: 800px;
     }
@@ -64,7 +64,7 @@
 
 /* 540px이하 */
 @media screen and (max-width: 540px) {
-    .AA_Text * {
+    .AA_Text, .AA_Text * {
         font-size: 9px;
         width: 680px;
     }
